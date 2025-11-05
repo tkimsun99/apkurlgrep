@@ -5,7 +5,7 @@ import (
 )
 
 func RunApktool(apk string, tempDir string) string {
-	cmd := exec.Command("apktool","d", apk, "-o", tempDir, "-fq")
+	cmd := exec.Command("apktool.bat", "d", apk, "-o", tempDir, "-fq")
 
 	output, err := cmd.CombinedOutput()
 	if err != nil {
